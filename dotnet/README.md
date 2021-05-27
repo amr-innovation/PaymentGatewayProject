@@ -22,10 +22,10 @@ Inaddition it will run this url too http://localhost:4242/checkout.html.
    2. Then in body enter  amount and payment_id (which was copied from Stripe dashboard) and this will call the Capture Api.
    3. After the Capture api is called the status for the corresponding transaction_id will be updated as completed.
 
-5. Ways to generate the JWT Token:
+4. Ways to generate the JWT Token:
 	1. Call the post method http://localhost:4242/users/authenticate and then in body pass
 	Username as 'test' and  Password as 'test'. Then the token will be send as response which is valid for 48 hours.
-4. Script for Transaction table:
+5. Script for Transaction table:
 
 CREATE TABLE [dbo].[Transaction](
 	[id] [varchar](50) NOT NULL,
@@ -44,5 +44,9 @@ CREATE TABLE [dbo].[Transaction](
 
 The credentials for stripe dashboard login: aneez.rafeek123@gmail.com
 	              pwd: Password@250521
+stripe dashboard url : https://dashboard.stripe.com
 
+To create a model based on existing database.
+command : Scaffold-DbContext "Server=144.91.97.73;Database=stripe;User Id=sa;Password=741#code;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities-force
+* select Entit Project as default project while executing this command
 ```
