@@ -120,25 +120,7 @@ namespace UnitTest
             Assert.IsNotNull(response);
 
         }
-        //[TestMethod]
-        //[ExpectedException(typeof(NullReferenceException))]
-        //public void Capture_StateUnderTest_ReturnNull()
-        //{
-        //    //Arrange
-        //    string expectedParam = "request";
-        //    var authorizeCapturePaymentGateway = this.CreateAuthorizeCapturePaymentGateway();
-        //    PaymentIntentCreateRequest paymentIntentCreateRequest = null;
-        //    // Act
-        //    try
-        //    {
-        //        var result = authorizeCapturePaymentGateway.Capture(paymentIntentCreateRequest);
-        //    }
-        //    // Assert
-        //    catch (ArgumentException ex)
-        //    {
-        //        Assert.AreEqual(expectedParam, ex.ParamName);
-        //    }
-        //}
+        
         [TestMethod]
         public void Capture_StateUnderTest_ReturnExpectedBehaviour()
         {

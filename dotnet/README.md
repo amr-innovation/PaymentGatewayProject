@@ -5,7 +5,7 @@ An [.NET Core](https://dotnet.microsoft.com/download/dotnet-core) implementation
 ## Requirements
 
 * .NET Core
-* [Configured .env file](../../README.md)
+* (../../README.md)
 
 ## How to run
 
