@@ -48,5 +48,5 @@ stripe dashboard url : https://dashboard.stripe.com
 
 To create a model based on existing database.
 command :- Scaffold-DbContext "Server=144.91.97.73;Database=stripe;User Id=sa;Password=741#code;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities-force
-* select Entit Project as default project while executing this command
+* Select Entity Project as default project while executing this command
 ```
